@@ -1,0 +1,562 @@
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  color: #000000;
+}
+
+/* .container {
+  border: 1px solid blue;
+} */
+
+.header-nav {
+  width: 100%;
+  padding: 15px;
+  position: fixed;
+  background: #F1F3FF;
+  z-index: 99;
+}
+
+.logo {
+  width: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.logo img:hover {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar a {
+  margin: 16px;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.navbar a:hover {
+  color: #00ac11;
+  text-decoration: underline;
+}
+
+.sidebar {
+  flex: 1;
+}
+
+.top-sidebar {
+  display: none;
+}
+
+.logo-sidebar img:hover {
+  width: 40%;
+}
+
+.overlay-bg {
+  display: none;
+}
+
+.burger-icon {
+  display: none;
+}
+
+.hero-section {
+  background: #F1F3FF;
+  padding-top: 150px;
+  position: relative;
+}
+
+.hero-content {
+  padding: 90px 0;
+}
+
+.hero-content h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  max-width: 75%;
+  margin-bottom: 15px;
+}
+
+.hero-content a {
+  background: #5CB85F;
+  border-color: #5CB85F;
+  border-radius: 2px;
+  padding: 8px 12px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #FFFFFF;
+}
+
+.hero-thumbnail {
+  position: absolute;
+  right: 0;
+  bottom: -2px;
+  width: 50%;
+}
+
+.hero-thumbnail img {
+  width: 100%;
+}
+
+.our-services {
+  padding-top: 150px;
+}
+
+.img-service {
+  padding: 0;
+}
+
+.img-service img {
+  display: flex;
+  margin: auto;
+}
+
+.services-desc {
+  padding: 20px 52px;
+}
+
+.services-desc h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  padding: 15px 0;
+}
+
+.services-desc p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  width: 88%;
+  padding: 15px 0;
+}
+
+.services-desc ul {
+  display: flex;
+  align-items: center;
+}
+
+.services-desc li {
+  padding: 10px 16px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.why-us {
+  padding-top: 100px;
+}
+
+.why-head {
+  padding: 8px 0;
+}
+
+.why-head h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+  padding: 8px 0;
+}
+
+.why-head h4 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  padding: 8px 0;
+}
+
+.why-border {
+  margin-top: 20px;
+}
+
+.why-content {
+  padding: 10px;
+  padding-right: 20px;
+  width: 100%;
+  height: 200px;
+  border: 1px solid #D0D0D0;
+  border-radius: 8px;
+}
+
+.why-content img {
+  padding: 10px;
+}
+
+.why-content h4 {
+  padding: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.why-content h5 {
+  padding: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.testimonial {
+  padding-top: 100px;
+  max-width: 150%;
+}
+
+.testi-head {
+  padding: 8px 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.testi-head h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+  padding: 8px 0;
+}
+
+.testi-head h4 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  padding: 8px 0;
+}
+
+.card-body {
+  display: flex;
+  background: #F1F3FF;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  align-items: center;
+  padding: 50px;
+  margin: 0 15px;
+}
+
+.card-body p {
+  text-align: justify;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  padding-bottom: 8px;
+}
+
+.card-body h4 {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.rate {
+  padding-bottom: 8px;
+}
+
+.cta-banner {
+  padding-top: 100px;
+}
+
+.cta-body {
+  background: #0D28A6;
+  border-radius: 13px;
+  text-align: center;
+}
+
+.cta-body h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  color: #FFFFFF;
+  padding-top: 64px;
+}
+
+.cta-body p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  padding: 16px 32% 0;
+}
+
+.cta-body a {
+  background: #5CB85F;
+  border-color: #5CB85F;
+  border-radius: 2px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin: 52px 0 64px;
+}
+
+.faq {
+  padding-top: 100px;
+}
+
+.faq h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.faq h4 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  padding-top: 16px;
+}
+
+.accordion-border {
+  border: none;
+}
+
+.accordion-item {
+  margin-bottom: 16px;
+  background: #FFFFFF;
+  border: 1px solid #D4D4D4;
+  border-radius: 4px;
+}
+
+.footer {
+  padding: 150px 0 25px;
+}
+
+.footer h4 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  padding-bottom: 16px;
+}
+
+.nav-footer li {
+  flex-direction: column;
+  padding-bottom: 16px;
+  padding-left: 80px;
+}
+
+.nav-footer a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.nav-footer a:hover {
+  color: #00ac11;
+  text-decoration: underline;
+}
+
+.footer a {
+  text-decoration: none;
+  padding-right: 16px;
+}
+
+.footer a img:hover {
+  width: 10%;
+}
+
+.copyright img:hover {
+  width: 70%;
+}
+
+@media (max-width:991px) {
+  .hero-section {
+    padding-top: 100px;
+  }
+  .hero-content {
+    padding-top: 0;
+    padding-right: 15px;
+    padding-bottom: 50px;
+  }
+  .hero-content h1 {
+    font-size: 32px;
+  }
+  .hero-content p {
+    max-width: 100%;
+  }
+  .hero-thumbnail {
+    position: relative;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+  }
+  .our-services {
+    padding-top: 150px;
+  }
+  .img-service img {
+    max-width: 85%;
+  }
+  .services-desc {
+    padding: 0;
+  }
+  .why-us {
+    padding-top: 70px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .why-head {
+    text-align: center;
+  }
+  .card-body {
+    flex-direction: column ;
+    padding: 40px 0;
+  }
+  .rate {
+    text-align: center;
+  }
+  .cta-banner {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .cta-banner h1 {
+    padding: 64px 50px;
+    padding-bottom: 16px;
+  }
+  .cta-banner p {
+    padding: 0 64px;
+  }
+  .cta-banner a {
+    margin: 32px 0 64px;
+  }
+  .faq {
+    padding-top: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .faq-head {
+    text-align: center;
+  }
+  .accordion {
+    padding-top: 40px;
+  }
+  .footer {
+    padding: 180px 15px 25px;
+    margin: 0 15px;
+  }
+  .address {
+    margin-bottom: 20px;
+  }
+  .nav-footer {
+    margin-bottom: 20px;
+  }
+  .nav-footer li {
+    padding-left: 0;
+  }
+  .info-binar {
+    margin: 20px 0;
+  }
+  .copyright {
+    margin: 20px 0;
+  }
+}
+
+@media (max-width:767px) {
+  .burger-icon {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .burger-icon img {
+    width: 40px;
+  }
+  .sidebar {
+    position: absolute;
+    width: 180px;
+    height: 100vh;
+    top: 0;
+    right: -180px;
+    padding-top: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    transition: 1s;
+  }
+  .sidebar.navbar-active {
+    right: 0px;
+  }
+  .top-sidebar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo-sidebar img {
+    max-width: 50%;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar li {
+    padding-top: 16px;
+  }
+  .navbar a {
+    margin-left: 0;
+  }
+  .overlay-bg {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+  }
+  .overlay-bg.navbar-active {
+    display: block;
+  }
+  .hero-section {
+    padding-top: 80px;
+  }
+  .hero-content {
+    padding-left: 15px;
+  }
+  .hero-content h1 {
+    font-size: 28px;
+  }
+  .hero-content p {
+    text-align: justify;
+  }
+  .our-services {
+    padding-top: 100px;
+  }
+  .services-desc {
+    padding: 15px 15px 0 15px;
+  }
+  .card-body {
+    flex-direction: column ;
+    padding: 40px 0;
+  }
+  .rate {
+    text-align: center;
+  }
+}

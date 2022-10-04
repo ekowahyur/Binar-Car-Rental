@@ -11,8 +11,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/bootstrap.css" />
   <link rel="stylesheet" href="./css/reset.css" />
-  <link rel="stylesheet" href="./css/find-car.css" />
-  <title>Cari Mobil</title>
+  <link rel="stylesheet" href="./css/detail-mobil.css" />
+  <title>Detail Mobil</title>
 </head>
 
 <body>
@@ -56,52 +56,42 @@
 
   <main class="main">
     <section class="hero-section">
-      <div class="container">
-        <div class="col-lg-6">
-          <div class="hero-content">
-            <h1>Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
-            <p>Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau.
-              Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
-          </div>
-        </div>
-      </div>
-      <div class="hero-thumbnail">
-        <img src="./images/img_car.png" alt="">
-      </div>
     </section>
 
-    <section class="find-car">
+    <section class="find-result">
       <div class="container">
-        <div class="find-car-border">
+        <div class="find-result-border">
+          <h3>Pencarianmu</h3>
           <div class="row">
-            <div class="find-car-form">
+            <div class="find-result-form">
               <div class="form">
                 <div class="col-lg-3">
                   <div class="form-border">
                     <div class="mb-3">
                       <label class="form-label">Nama Mobil</label>
-                      <input type="text" class="form-control" placeholder="Ketik nama/tipe mobil">
+                      <input type="text" class="form-control" placeholder="Innova" disabled>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-3">
                   <div class="form-border">
                     <label class="form-label">Kategori</label>
-                    <select class="form-select">
-                      <option selected>Masukan Kapasitas Mobil</option>
+                    <select class="form-select" disabled>
+                      <option>Masukan Kapasitas Mobil</option>
                       <option value="1">2 - 4 orang</option>
                       <option value="2">4 - 6 orang</option>
-                      <option value="3">6 - 8 orang</option>
+                      <option value="3" selected>6 - 8 orang</option>
                     </select>
                   </div>
                 </div>
                 <div class="col-lg-3">
                   <div class="form-border">
                     <label class="form-label">Harga</label>
-                    <select class="form-select">
-                      <option selected>Masukan Harga Sewa per Hari</option>
-                      <option value="1"> < Rp. 400.000 </option>
-                      <option value="2"> Rp. 400.000 - Rp. 600.000 </option>
+                    <select class="form-select" disabled>
+                      <option>Masukan Harga Sewa per Hari</option>
+                      <option value="1">
+                        < Rp. 400.000 </option>
+                      <option value="2" selected> Rp. 400.000 - Rp. 600.000 </option>
                       <option value="3"> > Rp. 600.000 </option>
                     </select>
                   </div>
@@ -109,21 +99,75 @@
                 <div class="col-lg-3">
                   <div class="form-border">
                     <label class="form-label">Status</label>
-                    <select class="form-select">
+                    <select class="form-select" disabled>
                       <option selected>Disewa</option>
                     </select>
                   </div>
-                </div>
-              </div>
-              <div class="submit">
-                <div class="button">
-                  <a href="find-result.html" target="_blank" class="btn btn-success">Cari Mobil</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      </div>
+    </section>
+
+    <section class="car-detail">
+      <div class="container">
+        <div class="car-detail-border">
+          <div class="row">
+            <div class="col-lg-7 col-md-12">
+              <div class="package-desc">
+                <div class="card">
+                  <h3>Tentang Paket</h3>
+                  <h3>Include</h3>
+                  <ul>
+                    <li>Apa saja yang termasuk dalam paket misal durasi max 12 jam</li>
+                    <li>Sudah termasuk bensin selama 12 jam</li>
+                    <li>Sudah termasuk Tiket Wisata</li>
+                    <li>Sudah termasuk pajak</li>
+                  </ul>
+                  <h3>Exclude</h3>
+                  <ul>
+                    <li>Tidak termasuk biaya makan sopir Rp 75.000/hari</li>
+                    <li>Jika overtime lebih dari 12 jam akan ada tambahan biaya Rp 20.000/jam</li>
+                    <li>Tidak termasuk akomodasi penginapan</li>
+                  </ul>
+                  <h3>Refund, Reschedule, Overtime</h3>
+                  <ul>
+                    <li>Tidak termasuk biaya makan sopir Rp 75.0000/hari</li>
+                    <li>Jika overtime lebih dari 12 jam akan ada tambahan biaya Rp 20.000/jam</li>
+                    <li>Tidak termasuk akomodasi penginapan</li>
+                    <li>Tidak termasuk biaya makan sopir Rp 75.0000/hari</li>
+                    <li>Jika overtime lebih dari 12 jam akan ada tambahan biaya Rp 20.000/jam</li>
+                    <li>Tidak termasuk akomodasi penginapan</li>
+                    <li>Tidak termasuk biaya makan sopir Rp 75.0000/hari</li>
+                    <li>Jika overtime lebih dari 12 jam akan ada tambahan biaya Rp 20.000/jam</li>
+                    <li>Tidak termasuk akomodasi penginapan</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-12">
+              <div class="card-border">
+                <div class="card">
+                  <img src="./images/car.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Innova</h5>
+                    <ul>
+                      <img src="./images/user-icon.svg" alt="">
+                      <li>6 - 8 orang</li>
+                    </ul>
+                    <div class="nominal">
+                      <h4>Total</h4>
+                      <h4>Rp 500.000</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>

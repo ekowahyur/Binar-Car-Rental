@@ -11,8 +11,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/bootstrap.css" />
   <link rel="stylesheet" href="./css/reset.css" />
-  <link rel="stylesheet" href="./css/find-car.css" />
-  <title>Cari Mobil</title>
+  <link rel="stylesheet" href="./css/find-result.css" />
+  <title>Hasil Pencarian</title>
 </head>
 
 <body>
@@ -56,52 +56,41 @@
 
   <main class="main">
     <section class="hero-section">
-      <div class="container">
-        <div class="col-lg-6">
-          <div class="hero-content">
-            <h1>Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
-            <p>Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau.
-              Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
-          </div>
-        </div>
-      </div>
-      <div class="hero-thumbnail">
-        <img src="./images/img_car.png" alt="">
-      </div>
     </section>
 
-    <section class="find-car">
+    <section class="find-result">
       <div class="container">
-        <div class="find-car-border">
+        <div class="find-result-border">
+          <h3>Pencarianmu</h3>
           <div class="row">
-            <div class="find-car-form">
+            <div class="find-result-form">
               <div class="form">
                 <div class="col-lg-3">
                   <div class="form-border">
                     <div class="mb-3">
                       <label class="form-label">Nama Mobil</label>
-                      <input type="text" class="form-control" placeholder="Ketik nama/tipe mobil">
+                      <input type="text" class="form-control" placeholder="Innova" disabled>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-3">
                   <div class="form-border">
                     <label class="form-label">Kategori</label>
-                    <select class="form-select">
-                      <option selected>Masukan Kapasitas Mobil</option>
+                    <select class="form-select" disabled>
+                      <option>Masukan Kapasitas Mobil</option>
                       <option value="1">2 - 4 orang</option>
                       <option value="2">4 - 6 orang</option>
-                      <option value="3">6 - 8 orang</option>
+                      <option value="3" selected>6 - 8 orang</option>
                     </select>
                   </div>
                 </div>
                 <div class="col-lg-3">
                   <div class="form-border">
                     <label class="form-label">Harga</label>
-                    <select class="form-select">
-                      <option selected>Masukan Harga Sewa per Hari</option>
+                    <select class="form-select" disabled>
+                      <option>Masukan Harga Sewa per Hari</option>
                       <option value="1"> < Rp. 400.000 </option>
-                      <option value="2"> Rp. 400.000 - Rp. 600.000 </option>
+                      <option value="2" selected> Rp. 400.000 - Rp. 600.000 </option>
                       <option value="3"> > Rp. 600.000 </option>
                     </select>
                   </div>
@@ -109,7 +98,7 @@
                 <div class="col-lg-3">
                   <div class="form-border">
                     <label class="form-label">Status</label>
-                    <select class="form-select">
+                    <select class="form-select" disabled>
                       <option selected>Disewa</option>
                     </select>
                   </div>
@@ -117,13 +106,64 @@
               </div>
               <div class="submit">
                 <div class="button">
-                  <a href="find-result.html" target="_blank" class="btn btn-success">Cari Mobil</a>
+                  <a href="find-car.html" target="_blank" class="btn btn-success">Edit</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      </div>
+    </section>
+
+    <section class="car-choice">
+      <div class="container">
+        <div class="car-choice-border">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="card-border">
+                <div class="card">
+                  <img src="./images/car.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Innova</h5>
+                    <h4>Rp 500.000 / hari</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. </p>
+                    <a href="car-detail.html" class="btn btn-primary">Pilih Mobil</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="card-border">
+                <div class="card">
+                  <img src="./images/car.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Innova</h5>
+                    <h4>Rp 500.000 / hari</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. </p>
+                    <a href="car-detail.html" class="btn btn-primary">Pilih Mobil</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="card-border">
+                <div class="card">
+                  <img src="./images/car.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Innova</h5>
+                    <h4>Rp 500.000 / hari</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. </p>
+                    <a href="car-detail.html" class="btn btn-primary">Pilih Mobil</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>

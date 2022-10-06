@@ -14,7 +14,7 @@ body {
   padding: 15px;
   position: fixed;
   background: #F1F3FF;
-  z-index: 99;
+  z-index: 9;
 }
 
 .logo {
@@ -126,6 +126,10 @@ body {
   padding: 0 15px;
 }
 
+.find-car-border.findcar-active {
+  z-index: 11;
+}
+
 .find-car-form {
   display: flex;
   padding-left: 0;
@@ -186,6 +190,23 @@ body {
   border-color: #5CB85F;
 }
 
+.overlay-bg-2 {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.overlay-bg-2.findcar-active {
+  display: block;
+  z-index: 10;
+}
+
 .footer {
   padding: 115px 0 25px;
 }
@@ -230,52 +251,66 @@ body {
   .hero-section {
     padding-top: 100px;
   }
+
   .hero-content {
     padding-top: 0;
     padding-right: 15px;
     padding-bottom: 50px;
   }
+
   .hero-content h1 {
     font-size: 32px;
   }
+
   .hero-content p {
     max-width: 100%;
   }
+
   .hero-thumbnail {
     position: relative;
     width: 100%;
     right: 0;
     bottom: 0;
   }
+
   .find-car-form {
     display: block;
   }
+
   .find-car-form .form {
     display: block;
     width: 100%;
   }
+
   .mb-3 {
     margin-bottom: 0 !important;
   }
+
   .find-car-form .submit {
     padding: 10px;
   }
+
   .footer {
     padding: 100px 15px 25px;
     margin: 0 15px;
   }
+
   .address {
     margin-bottom: 20px;
   }
+
   .nav-footer {
     margin-bottom: 20px;
   }
+
   .nav-footer li {
     padding-left: 0;
   }
+
   .info-binar {
     margin: 20px 0;
   }
+
   .copyright {
     margin: 20px 0;
   }
@@ -288,9 +323,11 @@ body {
     justify-content: flex-end;
     align-items: center;
   }
+
   .burger-icon img {
     width: 40px;
   }
+
   .sidebar {
     position: absolute;
     width: 180px;
@@ -303,27 +340,34 @@ body {
     z-index: 1;
     transition: 1s;
   }
+
   .sidebar.navbar-active {
     right: 0px;
   }
+
   .top-sidebar {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+
   .logo-sidebar img {
     max-width: 50%;
   }
+
   .navbar {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .navbar li {
     padding-top: 16px;
   }
+
   .navbar a {
     margin-left: 0;
   }
+
   .overlay-bg {
     position: absolute;
     width: 100vw;
@@ -333,24 +377,30 @@ body {
     background: rgba(0, 0, 0, 0.6);
     display: none;
   }
+
   .overlay-bg.navbar-active {
     display: block;
   }
+
   .hero-section {
     padding-top: 80px;
   }
+
   .hero-content {
     padding-left: 15px;
     padding-bottom: 15px;
   }
+
   .hero-content h1 {
     font-size: 28px;
   }
+
   .hero-content p {
     text-align: justify;
     font-size: 12px;
     font-weight: 400;
   }
+
   .find-car-border {
     margin-top: -25px;
   }
